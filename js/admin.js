@@ -1,10 +1,11 @@
+//获取客户端的宽度和高度，并设置.left .right的高度
 function getClientHeight(){
 	$(".left").height($(window).height()-72);
 	$(".right").height($(window).height()-72);
 }
 $(function(){
 	getClientHeight();
-	$(".menu_list").hide();
+	$(".menu_list").hide();				
 	$(".a_list").click(function(){
 		var len = $('.a_list').length;
 		var index = $(".a_list").index(this);
